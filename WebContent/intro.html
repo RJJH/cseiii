@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>动量策略</h1>
+<p>什么是动量策略</p>
+<p>比如&rdquo;股票的趋势延续原来的运动方向&ldquo;。通俗来讲：今天涨了，明天可能还会接着涨，强者恒强。根据这种假设，我们可以用收益率、成交量、换手率等等作为动量因子，来构建动量策略。</p>
+
+<p>其实同一级别拆开来看，市场的状态无非就是两种，趋势和震荡。我们怎么在股票中赚钱呢？上涨趋势的时候死死拿着，震荡行情中高抛低吸，下跌趋势趁早收手。听上去简单为啥大家都赚不到钱。难点在于，你分不清当前是震荡还是趋势。分开趋势是不可能的，能的话全市场的钱都是你的。比如今天突破了，你怎么知道明天是接着上涨还是跌回去，所以，我们就换一种思路，从概率的视角下看待问题。只要发出趋势成立的信号，我就按照未来是趋势的假设来操作，跌破了，我就止损，到了合适的点位，我就止盈。那么只要信号带来的收益值大于0，即认为这些操作是正确的。</p>
+<p>动量效应是捕捉趋势的一种方法，又称&ldquo;惯性效应&rdquo;，认为股票的收益率有延续原来的运动方向的趋势，即过去一段时间收益率较高的股票，在未来依旧会取得高于平均的收益率。</p>
+<p>根据这种假设，我们构建的策略就叫动量策略。</p>
+<p>那么如何构建我们的动量策略呢？</p>
+<p>第一我们建立股票池，在相对安全的股票池里选择股票，至于股票池是选择沪深300，上证50，还是中证500，还是自己挑选股票池皆可，主要符合自己的交易思路。</p>
+<p>第二选择动量因子，是收益率还是市盈率，还是其他一些技术指标因素还是基本面因素，结合历史回测记录进行挑选。</p>
+<p>第三确定持仓周期，是按照固定时间持仓，还是以技术分析理论择时方法进行持仓周期设定。</p>
+<p>好了策略制定完毕，接下来就是坐等收米了。不过期间随着各种因素变化要及时调整好仓位以及股票池，注意小概率事件风险等。</p>
+<div>
+  <div><img src="http://f10.baidu.com/it/u=3707302188,2918348783&amp;fm=170&amp;s=E00792185A736C8204BEA0C10300B0AB&amp;w=640&amp;h=430&amp;img.JPEG&amp;access=215967316" alt="上升" data-timgurl="http://f10.baidu.com/it/u=3707302188,2918348783&amp;fm=170&amp;s=E00792185A736C8204BEA0C10300B0AB&amp;w=640&amp;h=430&amp;img.JPEG&amp;access=215967316" data-box-viewerurl="http://f10.baidu.com/it/u=3707302188,2918348783&amp;fm=170&amp;s=E00792185A736C8204BEA0C10300B0AB&amp;w=640&amp;h=430&amp;img.JPEG&amp;access=215967316" data-bigoriginal="http://f10.baidu.com/it/u=3707302188,2918348783&amp;fm=170&amp;s=E00792185A736C8204BEA0C10300B0AB&amp;w=640&amp;h=430&amp;img.JPEG&amp;access=215967316" /></div>
+</div>
+<h4>&nbsp;</h4>
+<h4>&nbsp;</h4>
+<hr />
+<h1>均值回归</h1>
+<h4>
+  <p>均值回归（<span lang="EN-US" xml:lang="EN-US">Mean Reversion</span>），是在价格震荡中博取反弹的交易思路，它是基于<span lang="EN-US" xml:lang="EN-US">Poterba</span>和<span lang="EN-US" xml:lang="EN-US">Summers</span>（<span lang="EN-US" xml:lang="EN-US">1987</span>）首先提出的一种现象，如果要用一句话总结，那就是<span lang="EN-US" xml:lang="EN-US">&ldquo;</span>跌下去的迟早要涨上来<span lang="EN-US" xml:lang="EN-US">&rdquo;</span>。想理解均值回归，我们要先讲一下价格的波动性。<span lang="EN-US" xml:lang="EN-US"> </span></p>
+  <p>看过<span lang="EN-US" xml:lang="EN-US">K</span>线图的话，我们都知道股票的价格从来都不会平滑地上涨或下跌，而总是在移动的过程中上下波动，画出一些波浪。</p>
+  <p><img src="https://guorn.com/static/upload/img/5/64490527840532.jpg" alt="折线图" data-filename="1.jpg" /><br />
+  </p>
+  <p><br />
+  </p>
+  <p>如果市场满足<span lang="EN-US" xml:lang="EN-US">Fama</span>提出的市场有效性假说，那么这种波动现象应该是不存在的，然而现实中的市场并不是完全有效的。有许多研究尝试解释价格波动的现象，专家们普遍认为是诸如投资热点、对新闻的过度反应以及投资者的投机心态等非有效因素致使价格偏离了合理定价，从而造成了价格的波动。<span lang="EN-US" xml:lang="EN-US"> </span></p>
+  <p>均值回归的理论基于以下观测：价格的波动一般会以它的均线为中心。也就是说，当标的价格由于波动而偏离移动均线时，它将调整并重新归于均线。那么如果我们如果能捕捉偏离股价的回归，就可以从此获利。</p>
+  <p><br />
+  </p>
+  <p><span lang="EN-US" xml:lang="EN-US"> </span></p>
+  <p>举例来说，下图是一支股票的日线图，其中紫色曲线是<span lang="EN-US" xml:lang="EN-US">20</span>日均线，黄色箭头为在股价大幅度偏离时买入股票可以获得的收益。</p>
+  <p><img src="https://guorn.com/static/upload/img/5/64490577817250.jpg" alt="折线图" data-filename="1.jpg" /><span lang="EN-US" xml:lang="EN-US"><br />
+  </span></p>
+  <p>根据均值回归的思路，我们认为一支股票的价格低于其均线越多的时候，它回归的可能性就越大。因此，我们可以以一支股票的价格与其均线的偏离程度作为评估标准，并选择买入该偏离度最高的股票。<span lang="EN-US" xml:lang="EN-US"> </span></p>
+  <p>那么偏离度该如何计算呢？如果用<span lang="EN-US" xml:lang="EN-US">P</span>代表现在的股价，用<span lang="EN-US" xml:lang="EN-US">MA</span>代表均线的价格，那么这个度量是<span lang="EN-US" xml:lang="EN-US"> (MA-P)/MA</span>。<span lang="EN-US" xml:lang="EN-US"> </span></p>
+  <p>好了，你也许有两个问题：<span lang="EN-US" xml:lang="EN-US"> </span></p>
+  <p align="left"><span lang="EN-US" xml:lang="EN-US">1.     </span>为什么是均线减价格？<span lang="EN-US" xml:lang="EN-US"><br />
+  </span>因为我们认为价格低于均线越多越值得买，因此用均线减去价格算出的差率越高我们认为越值得买。<span lang="EN-US" xml:lang="EN-US"> </span></p>
+  <p align="left"><span lang="EN-US" xml:lang="EN-US">2.     </span>为什么要除以均线？<span lang="EN-US" xml:lang="EN-US"><br />
+  </span>因为价格和均线的差的单位是元，需要除以均线才可以在股票之间相互对比。比如股票<span lang="EN-US" xml:lang="EN-US">A</span>的价格是<span lang="EN-US" xml:lang="EN-US">1</span>，均线是<span lang="EN-US" xml:lang="EN-US">2</span>，股票<span lang="EN-US" xml:lang="EN-US">B</span>的价格是<span lang="EN-US" xml:lang="EN-US">99</span>，均线是<span lang="EN-US" xml:lang="EN-US">100</span>；它们的均线和价格差都是<span lang="EN-US" xml:lang="EN-US">1</span>，但很明显按照我们的思路，股票<span lang="EN-US" xml:lang="EN-US">A</span>更值得买，这要除以均线才能体现出来。</p>
+</h4>
+</body>
+</html>

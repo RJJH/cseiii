@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>股票排行</title>
+<link rel="alternate icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="css/amazeui.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/allstock.css">
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<header class="m-hd">
+  <section data-am-sticky class="am-show-md-up">
+    <div class="am-container"> <a href="index.jsp" class="m-logo" rel="nofollow"><i class="am-icon-spinner"></i> Quantour</a>
+      <nav>
+        <ul class="m-nav am-nav am-nav-pills am-fr">
+        </ul>
+      </nav>
+    </div>
+  </section>
+</header>
+<div class="m-header-banner m-list-header" >
+  <section class="am-container">
+    <hgroup data-am-scrollspy="{animation:'slide-bottom', delay: 317}">
+      <h2>股票排行</h2>
+    </hgroup>
+  </section>
+  <table width="1950px" border="0">
+  <tr>
+    <td width="200px">
+    <div class="nav">
+	<ul>
+		<li><a onclick="show1()">沪深排行</a></li>
+		<li><a onclick="show2()">上证A股</a></li>
+		<li><a onclick="show3()">上证B股</a></li>
+		<li><a onclick="show4()">深证A股</a></li>
+		<li><a onclick="show5()">深证B股</a></li>
+        <li><a onclick="show6()">上海指数</a></li>
+        <li><a onclick="show7()">深圳指数</a></li>
+		<li><a onclick="show8()">创业板</a></li>
+        <li><a onclick="show9()">中小板</a></li>
+        <li><a onclick="show10()">新股</a></li>
+	</ul>
+</div>
+    </td>
+    <td width="1750px">
+    <iframe id="stockshow1" src="stock_infos/stock_info1.jsp" width="1750" height="488" style="display:none"></iframe>
+    <iframe id="stockshow2" src="stock_infos/stock_info2.jsp" width="1750" height="488" style="display:none"></iframe>
+    <iframe id="stockshow3" src="stock_infos/stock_info3.jsp" width="1750" height="488" style="display:none"></iframe>
+    <iframe id="stockshow4" src="stock_infos/stock_info4.jsp" width="1750" height="488" style="display:none"></iframe>
+    <iframe id="stockshow5" src="stock_infos/stock_info5.jsp" width="1750" height="488" style="display:none"></iframe>
+    <iframe id="stockshow6" src="stock_infos/stock_info6.jsp" width="1750" height="488" style="display:none"></iframe>
+    <iframe id="stockshow7" src="stock_infos/stock_info7.jsp" width="1750" height="488" style="display:none"></iframe>
+    <iframe id="stockshow8" src="stock_infos/stock_info8.jsp" width="1750" height="488" style="display:none"></iframe>
+    <iframe id="stockshow9" src="stock_infos/stock_info9.jsp" width="1750" height="488" style="display:none"></iframe>
+    <iframe id="stockshow10" src="stock_infos/stock_info10.jsp" width="1750" height="488" style="display:none"></iframe>
+    </td>
+  </tr>
+</table>
+ <table width="100%" border="0">
+    <tr>
+      <td><img src="images/transparent.png" width="10" height="10"></td>
+    </tr>
+    <tr>
+      <td><footer class="m-footer" style="display: block;">
+          <div class="m-footer-bottom"><img src="images/transparent.png" width="10" height="70"></div>
+        </footer></td>
+    </tr>
+  </table>
+</div>
+<script src="js/echo.min.js"></script> 
+<script src="js/stockchange.js"></script>
+<script>
+  echo.init({
+    offset: 100,
+    throttle: 250,
+    unload: false,
+    callback: function (element, op) {
+      console.log(element, 'has been', op + 'ed')
+    }
+  });
+  // 图片赖加载
+  </script> 
+<!--[if (gte IE 9)|!(IE)]><!--> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/amazeui.min.js"></script> 
+<!--<![endif]--> 
+<script src='js/jquery.qrcode.min.js'></script> 
+<script type="text/javascript">
+
+//返回顶部
+function imj2(){
+	this.init();
+}
+imj2.prototype = {
+	constructor: imj2,
+	init: function(){
+		this._initBackTop();
+	},
+	_initBackTop: function(){
+		var $backTop = this.$backTop = $('<div class="m-top-cbbfixed">'+
+						'<a class="m-top-weixin m-top-cbbtn"">'+
+							'<span class="m-top-weixin-icon"></span><div></div>'+
+						'</a>'+
+						'<a class="m-top-go m-top-cbbtn">'+
+							'<span class="m-top-goicon"></span>'+
+						'</a>'+
+					'</div>');
+		$('body').append($backTop);
+
+		$backTop.click(function(){
+			$("html, body").animate({
+				scrollTop: 0
+			}, 120);
+		});
+
+		var timmer = null;
+		$(window).bind("scroll",function() {
+            var d = $(document).scrollTop(),
+            e = $(window).height();
+            0 < d ? $backTop.css("bottom", "10px") : $backTop.css("bottom", "-90px");
+			clearTimeout(timmer);
+			timmer = setTimeout(function() {
+                clearTimeout(timmer)
+            },100);
+	   });
+	}
+
+}
+var imj2 = new imj2();
+//end返回顶部
+</script>
+
+
+<script  type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">//左侧菜单
+//jQuery time
+var parent, ink, d, x, y;
+$(".nav ul li a").click(function(e){
+	parent = $(this).parent();
+	//create .ink element if it doesn't exist
+	if(parent.find(".ink").length == 0)
+		parent.prepend("<span class='ink'></span>");
+		
+	ink = parent.find(".ink");
+	//incase of quick double clicks stop the previous animation
+	ink.removeClass("animate");
+	
+	//set size of .ink
+	if(!ink.height() && !ink.width())
+	{
+		//use parent's width or height whichever is larger for the diameter to make a circle which can cover the entire element.
+		d = Math.max(parent.outerWidth(), parent.outerHeight());
+		ink.css({height: d, width: d});
+	}
+	
+	//get click coordinates
+	//logic = click coordinates relative to page - parent's position relative to page - half of self height/width to make it controllable from the center;
+	x = e.pageX - parent.offset().left - ink.width()/2;
+	y = e.pageY - parent.offset().top - ink.height()/2;
+	
+	//set the position and add class .animate
+	ink.css({top: y+'px', left: x+'px'}).addClass("animate");
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* CSS Document */
+#form1, #form2 {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bolder;
+}
+.m-header-banner.m-list-header table tr td #form1 {
+	color: #666;
+}
+#search-btn {
+	height: 50px;
+	background-color: #F00;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+#search-btn:hover {
+	text-decoration: none;
+}
+#search-btn:active {
+	position: relative;
+	top: 1px;
+}
+#comta {
+	border: inset;
+	border-color: #FF3;
+}
+#form1 {
+	font-size: 18px;
+}
+#firststock, #secondstock {
+	border-right-width: 0px;
+	width: 168px;
+	font-family: arial;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	color: #636365;
+	font-size: 18px;
+}
+#comparetable {
+	color: #000;
+	text-align:center;
+}
+#qwer {
+	width: 100%;
+	display: block;
+	line-height: 1.5em;
+	overflow: visible;
+	font-size: 30px;
+	text-shadow: #f3f3f3 1px 1px 0px, #b2b2b2 1px 2px 0
+}
+.sc_sel_results{
+	list-style:none;
+	float:left;
+}
+.sc_sel_results li{
+	width:240px;
+	float:left;
+	border:3px solid #C9F;
+	background-color:#CCF;
+}
+.sc_sel_results li span{
+	float:right;
+}
+
+#sc_sel_results_div{
+	padding:20px 0;
+}
+.sc_data_table {
+	border: 1px solid #e6e6e6;
+	border-width: 1px 1px 0 0;
+	width: 100%;
+	color:#000;
+}
+.sc_data_table thead th, .sc_data_table thead td {
+	font-weight: 700
+}
+.sc_data_table th, .sc_data_table td {
+	border: 1px solid #e6e6e6;
+	border-width: 0 0 1px 1px;
+	height: 24px;
+	padding: 0 5px
+}
+.sc_data_table thead td {
+	text-align: center
+}
+.sc_data_table thead td, .sc_data_table thead th {
+	background: #F3F;
+	width: 88px
+}
+.sc_data_table th {
+	padding-left: 15px
+}
+.sc_data_table tbody tr:nth-child(even) {
+	background: #CCC;
+}
+.sc_data_table tbody tr:nth-child(odd) {
+	background: #FFF;
+}
+.sc_data_table a {
+	color: #2767a9
+}

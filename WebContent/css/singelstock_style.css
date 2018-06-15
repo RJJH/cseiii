@@ -1,0 +1,431 @@
+.yellow {
+	color: #fdbe2c
+}
+.gray {
+	color: #d7d8da
+}
+.red {
+	color: #f24957
+}
+.green{
+	color:#0F0;
+}
+.s-up {
+	color: #f24957
+}
+.s-down {
+	color: #1dbf60
+}
+.s-stop {
+	color: #999
+}
+.stock-info {
+	position: relative;
+	padding: 10px 20px;
+}
+.stock-info .stock-bets h1 {
+	color: #000;
+	margin: 0;
+	max-width: 800px
+}
+.stock-info .stock-bets h1 a {
+	color: #333;
+	margin-right: 15px;
+	font-size: 18px
+}
+.stock-info .stock-bets .state {
+	color: #92a0ac;
+	font-size: 12px;
+	font-weight: 400
+}
+.stock-info .stock-bets .price strong {
+	font-size: 54px;
+	line-height: 56px;
+	margin-right: 20px
+}
+.stock-info .stock-bets .price span {
+	font-size: 18px;
+	margin-right: 10px;
+	font-weight: 700
+}
+.stock-info .bets-content {
+	margin-top: 7px;
+	border-top: #e9edf0 solid 1px;
+	padding: 14px 0
+}
+.stock-info .bets-content dl {
+	float: left;
+	width: 9.09%;
+	line-height: 18px
+}
+.stock-info .bets-content .bets-col-10 dl {
+	width: 10%
+}
+.stock-info .bets-content .bets-col-9 dl {
+	width: 11.11%
+}
+.stock-info .bets-content .bets-col-8 dl {
+	width: 12.5%
+}
+.stock-info .bets-content .bets-col-4 dl {
+	width: 25%
+}
+.stock-info .bets-content .line2 {
+	margin-top: 10px;
+	clear: left
+}
+.stock-info .bets-content dt {
+	color: #000;
+}
+.stock-info .bets-content dt sup {
+	line-height: 10px
+}
+.stock-info .bets-content dd {
+	font-size: 14px;
+	font-weight: 700
+}
+.stock-info .stock-add {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	width: 150px;
+	text-align: center;
+	width: 142px
+}
+.stock-info .stock-add button {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #2e85ff;
+	border: 0;
+	padding: 0;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #000;
+	cursor: pointer
+}
+.stock-info .stock-add button:active {
+	background: #006aff
+}
+.stock-info .stock-add .watched {
+	background-color: #92a1ad
+}
+.stock-info .stock-add .watched:active {
+	background-color: #75838E
+}
+.stock-info .stock-add li span {
+	margin-right: 3px
+}
+.stock-info .stock-add .hint {
+	margin-top: 3px;
+	color: #707f8b
+}
+.stock-info .stock-link span {
+	margin-right: 2px;
+	color: #92a0ac
+}
+.stock-info .stock-link a {
+	color: #297acc
+}
+.stock-info .mt-1 {
+	margin-top: -1px
+}
+.stock-bets .flicker-up>* {
+	-webkit-animation: flicker-up 1.5s;
+	animation: flicker-up 1.5s
+}
+.stock-bets .flicker-down>* {
+	-webkit-animation: flicker-down 1.5s;
+	animation: flicker-down 1.5s
+}
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+dl, dd {
+	margin: 0
+}
+a {
+	color: #707070;
+	text-decoration: none
+}
+a:hover {
+	text-decoration: underline;
+	color: #2d64b3
+}
+input:focus, button:focus {
+	outline: 0
+}
+textarea {
+	resize: none
+}
+.hidden, .hide {
+	display: none
+}
+
+.invisible {
+	visibility: hidden
+}
+.visible {
+	visibility: visible
+}
+.left {
+	float: left
+}
+.right {
+	float: right
+}
+.clear {
+	clear: both
+}
+.m-t {
+	margin-top: 14px
+}
+.m-l {
+	margin-left: 14px
+}
+.m-b {
+	margin-bottom: 14px
+}
+.side-border {
+	border-bottom: 1px solid #e5e4e9;
+	position: relative;
+	clear: both
+}
+.side-border::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	border-left: 1px solid #e5e4e9;
+	z-index: 5
+}
+.side-border::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	border-right: 1px solid #e5e4e9;
+	z-index: 5
+}
+.side-tab {
+	display: inline-block;
+	background-color: #f6f6f6
+}
+.side-tab>li {
+	width: 50%;
+	border-right: 1px solid #e5e4e9;
+	border-bottom: 1px solid #e5e4e9;
+	font-weight: 700;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.side-tab .active {
+	border-bottom: 0;
+	background-color: #FF6;
+	color: #247dfb
+}
+.side-tab>li:hover, .side-tab>ul>li:hover {
+	color: #247dfb
+}
+.my-stock {
+	width: 100%;
+	overflow-y: auto
+}
+.my-stock .tab {
+	border: 0
+}
+.my-stock-tab {
+	width: 100%
+}
+.my-stock-tab em {
+	padding-left: 9px;
+	position: relative;
+	left: 4px;
+	display: none
+}
+.my-stock .tab li {
+	width: 78px;
+	height: 15px;
+	line-height: 15px;
+	margin: 8px auto;
+	border: 0;
+	text-align: center
+}
+.my-stock .tab li:nth-child(2) {
+	border-left: 1px solid #D2D2D2;
+	border-right: 1px solid #D2D2D2
+}
+.my-stock .tab .current span {
+	padding-bottom: 4px;
+	border-bottom: 2px solid #669def
+}
+.my-stock-item {
+	height: 414px;
+	margin-top: -3px;
+	overflow-y: auto;
+	display: none
+}
+.my-stock-item.active {
+	display: block
+}
+.my-stock-item a {
+	color: #354346
+}
+.my-stock-item a:hover {
+	color: #2d64b3
+}
+.my-stock-item table {
+	width: 100%;
+	border-collapse: collapse
+}
+.my-stock-item td, .my-stock-item th {
+	width: 65px;
+	max-width: 65px;
+	font-weight: 400
+}
+.my-stock-item th {
+	color: #5e6b7a;
+	font-size: 12px;
+	text-align: right;
+	padding-right: 10px
+}
+.my-stock-item th:nth-child(3) {
+	padding-right: 20px
+}
+.my-stock-item th:first-child, .my-stock-item td:first-child {
+	padding-left: 15px;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 72px
+}
+.my-stock-item td:nth-child(2) {
+	padding-right: 10px;
+	font-size: 13px;
+	text-align: right
+}
+.my-stock-item td:nth-child(3) {
+	position: relative;
+	padding-right: 20px;
+	font-size: 13px;
+	text-align: right
+}
+.my-stock-item.history {
+	height: auto
+}
+.stock-side .my-stock-item th, .stock-side .my-stock-item td:nth-child(2) {
+	padding-right: 16px
+}
+.stock-side .my-stock-item th:nth-child(3), .stock-side .my-stock-item td:nth-child(3) {
+	padding-right: 22px
+}
+.my-stock-item td a span {
+	display: block;
+	font-size: 12px;
+	color: #7e8e9d
+}
+.my-stock-item tr:first-child {
+	background-color: #f5f8fa;
+	height: 30px;
+	border-bottom: 0
+}
+.my-stock-item tr {
+	height: 48px;
+	font-size: 14px;
+	border-bottom: 1px solid #e5e4e9
+}
+.my-stock-item .del {
+	position: absolute;
+	width: 11px;
+	height: 10px;
+	top: 20px;
+	right: 5px;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAMAAAAcEyWHAAAABlBMVEWSoK7///8o5Nk1AAAAAnRSTlP/AOW3MEoAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAADgmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjdhOWUwOWVlLWNiNTEtNDhmYS1hZmZmLTMzZTU3Yzk1NWJhYSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxMTcwMUMwMUUzNUYxMUU1QTFCNUNDODEwODRCOUMwNiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxMTcwMUMwMEUzNUYxMUU1QTFCNUNDODEwODRCOUMwNiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6N2U5NTA2M2ItMGQ5YS00NmM2LWE0ZjktYjI0NTk3MmQ5OWYwIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MTkxOTM0NGQtMmJhZC0xMTc5LWFkNDUtOGEyZTNlODMwMDgyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ThzL0QAAACBJREFUCNdjYGBgBAEGIA1mgmgICaKgMmgsuCxcB9wUAAbgACvBpBx+AAAAAElFTkSuQmCC) no-repeat;
+	display: none
+}
+.my-stock-item .del:hover {
+	font-weight: 700;
+	cursor: pointer;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAMAAAAcEyWHAAAABlBMVEWAjJj///+3ix/dAAAAAnRSTlP/AOW3MEoAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAADgmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjdhOWUwOWVlLWNiNTEtNDhmYS1hZmZmLTMzZTU3Yzk1NWJhYSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxMTcwMUJGREUzNUYxMUU1QTFCNUNDODEwODRCOUMwNiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxMTcwMUJGQ0UzNUYxMUU1QTFCNUNDODEwODRCOUMwNiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6N2U5NTA2M2ItMGQ5YS00NmM2LWE0ZjktYjI0NTk3MmQ5OWYwIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MTkxOTM0NGQtMmJhZC0xMTc5LWFkNDUtOGEyZTNlODMwMDgyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ZWutWQAAACBJREFUCNdjYGBgBAEGIA1mgmgICaKgMmgsuCxcB9wUAAbgACvBpBx+AAAAAElFTkSuQmCC) no-repeat
+}
+.my-stock-item tr:hover {
+	background-color: #f9f9f9
+}
+.my-stock-item tr:hover .del {
+	display: inline-block
+}
+.my-stock-item[data-type=hotStock] tr:hover .del {
+	display: none
+}
+.my-stock-hint {
+	text-align: center;
+	font-size: 14px;
+	color: gray;
+	position: absolute;
+	top: 45%;
+	width: 100%
+}
+.my-stock-hint button {
+	width: 140px;
+	height: 40px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 16px;
+	letter-spacing: 20px;
+	text-indent: 20px
+}
+.my-stock-hint p {
+	margin-top: 8px;
+	font-size: 12px
+}
+.my-stock-item .no-history {
+	text-align: center;
+	color: #7e8e9d;
+	font-size: 12px;
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+.my-stock-item .no-more-history {
+	text-align: center;
+	color: #7e8e9d;
+	font-size: 12px;
+	margin: 16px auto
+}
+.my-stock-item .no-more-history a {
+	color: #247dfb
+}
+#boxbox {
+	background-image: url(../images/timg.jpg);
+	opacity:0.7;
+	height:600px;
+	width:300px;
+}
+#biaoti{
+	color: #000;
+	font-size:24px;
+	text-align:center;
+}
+#imtable{
+	background:#FFF;
+	
+}
+#suibian1{
+	color:#000;
+	font-weight:bold;
+}
+#suibian2{
+	color:#000;
+}

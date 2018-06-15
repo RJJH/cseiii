@@ -1,0 +1,113 @@
+/* CSS Document */
+
+/* mod-data */
+body{
+	background-color:#FF9
+}
+.mod-datas {
+}
+.mod-datas th a {
+	color: #003497;
+}
+.mod-datas .data-table, .table-data {
+	border-collapse: collapse;
+	border: 1px solid #bbd4e8;
+}
+.mod-datas .collapse-top {
+	border-top-style: hidden;
+}
+.mod-datas .data-table td, .table-data td {
+	height: 26px;
+	border: 1px solid #bbd4e8;
+	text-align: center;
+}
+.mod-datas .data-table td span {
+	font-family: Arial;
+	font-weight: 700;
+}
+.mod-datas .data-table th, .table-data th {
+	height: 34px;
+	border: 1px solid #bbd4e8;
+	text-align: center;
+	background-color: #ebf6ff;
+}
+.mod-datas .data-table .txt-left, .table-data .txt-left {
+	text-align: left;
+	padding-left: 10px;
+}
+.mod-datas .footer-more {
+	padding-right: 11px;
+	border: 1px solid #bbd4e8;
+	border-top: none;
+	line-height: 26px;
+	text-align: right;
+}
+.mod-datas .icon-plus {
+	margin: 0 auto;
+}
+.mod-datas .open-state {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.mod-datas .open-state + a {
+	vertical-align: middle;
+} /*匹配紧跟E元素后的F元素*/
+.mod-datas .collapse-top {
+	border-top-style: hidden;
+}
+.mod-datas .data-table1 {
+	border-collapse: collapse;
+	border: 1px solid #bbd4e8;
+}
+.mod-datas .data-table1 td {
+	line-height: 23px;
+	border: 1px solid #bbd4e8;
+	text-align: center;
+}
+.mod-datas .data-table1 th {
+	line-height: 29px;
+	border: 1px solid #bbd4e8;
+	text-align: center;
+	background-color: #ebf6ff;
+}
+/*fixed ie 6,7*/
+.mod-datas .collapse-top {
+*margin-top:-1px; /*不支持 border-top-style:hidden;*/
+}
+.mod-datas .data-hgt {
+	border-collapse: collapse;
+	border: 1px solid #bbd4e8;
+	height: 149px;
+}
+.mod-datas .data-hgt .htox {
+	height: 70px;
+}
+.mod-datas .data-hgt .gtox {
+	height: 70px;
+	border-top: 1px solid #bbd4e8;
+	clear: both;
+	padding-top: 2px;
+}
+.mod-datas .data-hgt .hgtit {
+	float: left;
+	width: 70px;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 26px;
+}
+.mod-datas .data-hgt .hgtit a {
+	color: #003497;
+}
+.mod-datas .data-hgt .hgtcnt {
+	float: left;
+	width: 192px;
+	line-height: 24px;
+}
+.mod-datas .data-hgt .hgtcnt b {
+	padding-left: 5px;
+	padding-right: 3px;
+}
+.mod-datas .data-hgt .hgtcnt .grap {
+	color: #999;
+}
+/* mod-side-menu */
