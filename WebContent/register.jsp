@@ -18,8 +18,8 @@ function load()
 }
 </script>
 </head>
-<body onload=load()>
-    <table width="1950px" border="0">
+<body onload=load() style="overflow-x: hidden">
+    <table width="1050px" border="0">
       <tr>
         <td>&nbsp;</td>
         <td colspan="3"><img src="images/transparent.png" width="500" height="200" /></td>

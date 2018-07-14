@@ -18,6 +18,12 @@
 <link rel="Stylesheet" type="text/css" href="css/loginDialog.css" />
 <script type="text/javascript" src="js/jquery.bigautocomplete.js"></script> 
 <link rel="stylesheet" href="css/jquery.bigautocomplete.css" type="text/css" />
+<style>
+
+td{
+border:none;/*这个是单元格，不给他要边框*/
+}
+</style>
 </head>
 
 
@@ -43,7 +49,7 @@
       </div>
     </section>
   </header>  
-  <div data-am-widget="slider" class="am-slider am-slider-i2" data-am-flexslider="{controlNav:false}">
+  <div  style="position:absolute;left:500px;">
     <ul class="am-slides">
       <li class="am-slider-images">
         <div class="am-container am-slider-desc">
@@ -62,25 +68,52 @@
       </li>
     </ul>
   </div>
-  <div class="m-services m-home-box">
-    <section class="am-container">
-      <hgroup class="am-animation-slide-bottom am-animation-delay-1" data-am-scrollspy="{animation:'slide-bottom', delay: 100}">
-        <h2>更好的股票分析</h2>
-        <p>为您实现使用量化交易算法的股票回溯和演算系统，深入分析股票行情，模拟和比较量化模型</p>
-      </hgroup>
-      <table width="1950px" border="0">
+	<div style="position:absolute;left:200px;top:450px">
+	<p style="color:red" align="left"><font size="5">新人必看</p>
+	<table width="400px" class="table-body">
+	<tr><td><font size="4"><a href="https://jingyan.baidu.com/article/148a1921830fa84d70c3b14b.html"  target="blank">新手怎么学炒股</a></td></tr>
+	<tr><td><font size="4"><a href="https://jingyan.baidu.com/article/3a2f7c2e7fa77326afd6110d.html" target="blank">股票新手操作指南</a></td></tr>
+    <tr><td><font size="4"><a href="http://zhengu.88889829.top/?gpmc-gpdm&gp=600519" target="blank">大数据诊股</a></td></tr>
+    <tr><td><font size="4"><a href="http://bj.neofelis.wang/" target="blank">解密炒股</a></td></tr>
+    <tr><td><font size="4"><a href="http://niugu.sxzctec027.cn/gp/208" target="blank">股票走势精准预测</a></td></tr>
+    <tr><td><font size="4"><a href="http://gp.sxzctec060.cn/jzx/" target="blank">股票大盘走势图</a></td></tr>
+    <tr><td><font size="4"><a href="http://stock.eastmoney.com/" target="blank">股票频道</a></td></tr>
+    <tr><td><font size="4"><a href="http://stock.xinhua08.com/" target="blank">中国金融</a></td></tr>
+    <tr><td><font size="4"><a href="http://stock.10jqka.com.cn/" target="blank">股票必读</a></td></tr>
+    <tr><td><font size="4"><a href="http://finance.sina.com.cn/stock/" target="blank">新浪财经</a></td></tr>
+	</table>
+	</div>
+	
+	<div style="position:absolute;left:800px;top:450px">
+	<p style="color:red" align="left"><font size="5">新人必看</p>
+	<table width="400px" class="table-body">
+	<tr><td><font size="4"><a href="http://stock.hexun.com/" target="blank">新闻速递</a></td></tr>
+	<tr><td><font size="4"><a href="http://stock.stockstar.com/" target="blank">证券之星</a></td></tr>
+    <tr><td><font size="4"><a href="http://qy.compass.cn/fenfen2.php?from=360_101_4039292066_3620390365_5384713275_1135771252" target="blank">中国股票信息网</a></td></tr>
+    <tr><td><font size="4"><a href="http://www.qn43.cn/" target="blank">今日股票</a></td></tr>
+    <tr><td><font size="4"><a href="http://qk.sxzctec006.cn/" target="blank">从入门到精通</a></td></tr>
+    <tr><td><font size="4"><a href="http://zhengu.88889829.top/?gpmc-gpdm&gp=600519" target="blank">解读股票近期行情</a></td></tr>
+    <tr><td><font size="4"> <a href="http://cl.sxzctec047.cn/" target="blank">新手推荐入股</a></td></tr>
+    <tr><td><font size="4"> <a href="http://www.syb678.com/" target="blank">投资技术大讲堂</a></td></tr>
+    <tr><td><font size="4"><a href="http://qk.sxzctec006.cn/" target="blank">龙头股推荐</a></td></tr>
+    <tr><td><font size="4"><a href="http://vip.9111726.cn/" target="blank">散户必看</a></td></tr>
+	</table>
+	</div>
+  
+  <div style="position:absolute;left:200px;top:350px">
+      <table width="1300px" border="0">
         <tr>
           <td><ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-6 am-thumbnails">
               <li class="am-animation-slide-top" data-am-scrollspy="{animation:'slide-top', delay: 0}"> <a href="temperature.jsp"><img src="images/areabg1.png" width="180" height="90" /></a> </li>
               <li class="am-animation-slide-top" data-am-scrollspy="{animation:'slide-top', delay: 0}"> <a href="allstock.html"  id="suoyou"><img src="images/areabg2.png" width="180" height="90" /></a> </li>
               <!--<li class="am-animation-slide-top am-animation-delay-1" data-am-scrollspy="{animation:'slide-top', delay: 100}"> <a href="strategy.jsp"><img src="images/areabg3.png" width="180" height="90" /></a> </li>-->
+               <li class="am-animation-slide-top am-animation-delay-1" data-am-scrollspy="{animation:'slide-top', delay: 100}"> <a href="longhu.jsp"  id="longhubang"><img src="images/areabg5.png" width="180" height="90" /></a> </li>
+              <li class="am-animation-slide-top am-animation-delay-1" data-am-scrollspy="{animation:'slide-top', delay: 100}"> <a href="Forecast.jsp"  id="yuce"><img src="images/areabg6.png" width="180" height="90"  /></a> </li> 
                <li class="am-animation-slide-top am-animation-delay-1" data-am-scrollspy="{animation:'slide-top', delay: 100}"> <a href="stockcompare.jsp"><img src="images/areabg4.png" width="180" height="90" /></a> </li>  
             </ul>
-            <ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-6 am-thumbnails">
-              <li class="am-animation-slide-top am-animation-delay-1" data-am-scrollspy="{animation:'slide-top', delay: 100}"> <a href="longhu.jsp"  id="longhubang"><img src="images/areabg5.png" width="180" height="90" /></a> </li>
-              <li class="am-animation-slide-top am-animation-delay-1" data-am-scrollspy="{animation:'slide-top', delay: 100}"> <a href="Forecast.jsp"  id="yuce"><img src="images/areabg6.png" width="180" height="90"  /></a> </li>
-
-            </ul>
+   </div>
+   
+   
             
 <script type="text/javascript">
 function check(){
@@ -137,12 +170,6 @@ suoyou.onclick = function(e1) {
 	<%}%>
 }
 </script>
-
-            </td>
-        </tr>
-      </table>
-    </section>
-  </div>
   <!-- <footer class="m-footer" style="display: block;">
     <div class="m-footer-bottom"></div>
   </footer> -->

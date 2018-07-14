@@ -315,7 +315,7 @@ else{
       </td>
     </tr>
   </table>
-  <table width="100%" border="0">
+  <!-- <table width="100%" border="0">
     <tr>
       <td><img src="images/transparent.png" width="10" height="10"></td>
     </tr>
@@ -324,7 +324,7 @@ else{
           <div class="m-footer-bottom"><img src="images/transparent.png" width="10" height="40"></div>
         </footer></td>
     </tr>
-  </table>
+  </table> -->
 </div>
 <script src="js/echo.min.js"></script> 
 
