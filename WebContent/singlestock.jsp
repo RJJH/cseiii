@@ -30,7 +30,7 @@
 
 </head>
 
-<body>
+<body style="overflow-x: hidden">
 
 <header class="m-hd">
   <section data-am-sticky class="am-show-md-up">
@@ -38,10 +38,10 @@
         <nav>
           <ul class="m-nav am-nav am-nav-pills am-fr">
 <% if (s.getAttribute("email")==null) { %>
-      <li><a href="register.jsp" rel="nofollow">注册</a></li>
-      <li><a href="login.jsp" rel="nofollow">登陆</a></li> 
+      <li><a href="register.jsp" rel="nofollow" style="color:red">注册</a></li>
+      <li><a href="login.jsp" rel="nofollow" style="color:red">登陆</a></li> 
 <% } else { %>
-      <li style="color:#FFF; font-size:24px"><%="当前用户："+s.getAttribute("email")%></li>
+      <li style="color:#DC143C; font-size:24px"><%="当前用户："+s.getAttribute("email")%></li>
       <li><form action="logout.spring">
        <button name="logout" id="logout">注销</button>
       </form>
@@ -61,7 +61,7 @@
   <div>
     <div class="stock-info" data-spm="2">
       <div class="stock-bets">
-        <table width="1950px" border="0" >
+        <table width="1500px" border="0" >
           <tr>
             <td width="292.5px"><h1><%=s.getAttribute("stock_name")%><span>(<%=s.getAttribute("stock_id")%>)</span></h1></td>
             <td width="1657.5px"><form name="form1" method="post" action="addFavorite.spring">
@@ -79,7 +79,7 @@
         <div class="bets-content">
           <div class="line1">
             <dl>
-              <dt>开盘</dt>
+              <dt>开盘</dt>
               <dd><%=String.valueOf(s.getAttribute("open"))%></dd>
             </dl>
             <dl>
@@ -91,11 +91,11 @@
               <dd class="s-up"><%=String.valueOf(s.getAttribute("max_price"))%></dd>
             </dl>
             <dl>
-              <dt>成交量</dt>
+              <dt>成交量</dt>
               <dd><%=String.valueOf(s.getAttribute("cjl"))%></dd>
             </dl>
             <dl>
-              <dt>振幅</dt>
+              <dt>振幅</dt>
               <dd><%=s.getAttribute("amplitude")%></dd>
             </dl>
             
@@ -128,7 +128,7 @@
   </div>
   <script>
 </script>
-  <table width="1850px" border="0" align="center" id="imtable">
+  <table width="1500px" border="0" align="center" id="imtable">
     <tr>
       <td colspan="2" bgcolor="#FFFFCC"><div id="junxian" style="height:400px"></div></td>
       <td width="298" rowspan="2" bgcolor="#FFFFCC">

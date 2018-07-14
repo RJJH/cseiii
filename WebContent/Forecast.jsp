@@ -18,7 +18,7 @@
   <div><img src="images/yuce.png" width="514" height="95" /></div></center>
   <div><a href="#intro"><img src="images/str_intro.png" width="177" height="41" /></a>
     </div>
-<table width="1850px" border="0">
+<table width="1500px" border="0">
   <tr>
     <td><h2>上证指数</h2></td>
   </tr>

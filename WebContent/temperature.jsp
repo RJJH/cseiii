@@ -19,17 +19,17 @@
 
 
 </head>
-<body>
+<body style="overflow-x: hidden">
 <header class="m-hd">
   <section data-am-sticky class="am-show-md-up">
       <div class="am-container"> <a href="index.jsp" class="m-logo" rel="nofollow"><i class="am-icon-spinner"></i> Quantour</a>
         <nav>
           <ul class="m-nav am-nav am-nav-pills am-fr">
 <% if (s.getAttribute("email")==null) { %>
-      <li><a href="register.jsp" rel="nofollow">注册</a></li>
-      <li><a href="login.jsp" rel="nofollow">登陆</a></li> 
+      <li><a href="register.jsp" rel="nofollow" style="color:red">注册</a></li>
+      <li><a href="login.jsp" rel="nofollow" style="color:red">登陆</a></li> 
 <% } else { %>
-      <li style="color:#FFF; font-size:24px"><%="当前用户："+s.getAttribute("email")%></li>
+      <li style="color:	#DC143C; font-size:24px"><%="当前用户："+s.getAttribute("email")%></li>
       <li><form action="logout.spring">
        <button name="logout" id="logout">注销</button>
       </form>
@@ -43,7 +43,7 @@
 <div class="m-header-banner m-list-header" >
   <section class="am-container">
     <hgroup data-am-scrollspy="{animation:'slide-bottom', delay: 317}">
-      <h2>市场温度计</h2>
+      <h2 style="color:black">市场温度计</h2>
     </hgroup>
   </section>
   <div>
@@ -118,7 +118,7 @@
           </table></td>
       </tr>
     </table>
-    <table width="100%" border="0">
+    <!-- <table width="100%" border="0">
       <tr>
         <td><img src="images/transparent.png" width="10" height="10"></td>
       </tr>
@@ -127,7 +127,7 @@
             <div class="m-footer-bottom"><img src="images/transparent.png" width="10" height="70"></div>
           </footer></td>
       </tr>
-    </table>
+    </table> -->
   </div>
 </div>
 <script>

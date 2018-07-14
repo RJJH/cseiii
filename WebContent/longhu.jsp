@@ -16,7 +16,7 @@
 <div class="mod-datas" id="zyzs">
 <center>
   <div><img src="images/longhu.png" width="278" height="90" /></div></center>
-      <table width="1950px" class="data-table" bgcolor="#FFFFCC">
+      <table width="1500px" class="data-table" bgcolor="#FFFFCC">
         <thead>
           <tr>
             <th width="80px">代码</th>

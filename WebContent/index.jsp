@@ -20,7 +20,8 @@
 <link rel="stylesheet" href="css/jquery.bigautocomplete.css" type="text/css" />
 </head>
 
-<body>
+
+<body style="overflow-x: hidden">
 <center>
    <header class="m-hd">
     <section data-am-sticky class="am-show-md-up">
@@ -28,10 +29,10 @@
         <nav>
           <ul class="m-nav am-nav am-nav-pills am-fr">
 <% if (s.getAttribute("email")==null) { %>
-      <li><a href="register.jsp" rel="nofollow">注册</a></li>
-      <li><a href="login.jsp" rel="nofollow">登陆</a></li> 
+      <li><a href="register.jsp" rel="nofollow" style="color:red">注册</a></li>
+      <li><a href="login.jsp" rel="nofollow" style="color:red"s>登陆</a></li> 
 <% } else { %>
-      <li style="color:#FFF; font-size:24px"><%="当前用户："+s.getAttribute("email")%></li>
+      <li style="color:	#DC143C; font-size:24px"><%="当前用户："+s.getAttribute("email")%></li>
       <li><form action="logout.spring">
        <button name="logout" id="logout">注销</button>
       </form>
@@ -65,7 +66,7 @@
     <section class="am-container">
       <hgroup class="am-animation-slide-bottom am-animation-delay-1" data-am-scrollspy="{animation:'slide-bottom', delay: 100}">
         <h2>更好的股票分析</h2>
-        <p>为您实现使用量化交易算法的股票回溯和演算系统，深入分析股票行情，模拟和比较量化模型</p>
+        <p>为您实现使用量化交易算法的股票回溯和演算系统，深入分析股票行情，模拟和比较量化模型</p>
       </hgroup>
       <table width="1950px" border="0">
         <tr>
@@ -142,9 +143,9 @@ suoyou.onclick = function(e1) {
       </table>
     </section>
   </div>
-  <footer class="m-footer" style="display: block;">
+  <!-- <footer class="m-footer" style="display: block;">
     <div class="m-footer-bottom"></div>
-  </footer>
+  </footer> -->
 </center>
 <script src="js/echo.min.js"></script> 
 <script src="js/amazeui.min.js"></script> 

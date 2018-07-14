@@ -22,10 +22,9 @@ function load()
 <title>登陆</title>
 <link rel="stylesheet" href="css/log.css">
 <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
 </head>
-<body onload="load()">      
-    <table width="1950px" border="0">
+<body onload="load()"style="overflow-x: hidden">      
+    <table width="1000px" border="0">
       <tr>
         <td>&nbsp;</td>
         <td colspan="3"><img src="images/transparent.png" width="500" height="200" /></td>
