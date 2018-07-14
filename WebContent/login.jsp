@@ -43,7 +43,7 @@ function load()
       <h1>登 陆</h1>
       <input type="email" name="email" class="login-input" placeholder="用户账户" autofocus>
       <input type="password" name="password" class="login-input" placeholder="密码输入">
-      <input type="submit" value="Let me In" class="login-submit">
+      <input type="submit" value="登陆" class="login-submit">
       <p class="login-help"><a href="index.jsp">返回首页</a></p>
 </form></td>
         <td>&nbsp;</td>

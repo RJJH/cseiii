@@ -72,8 +72,8 @@
           <td><ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-6 am-thumbnails">
               <li class="am-animation-slide-top" data-am-scrollspy="{animation:'slide-top', delay: 0}"> <a href="temperature.jsp"><img src="images/areabg1.png" width="180" height="90" /></a> </li>
               <li class="am-animation-slide-top" data-am-scrollspy="{animation:'slide-top', delay: 0}"> <a href="allstock.html"  id="suoyou"><img src="images/areabg2.png" width="180" height="90" /></a> </li>
-              <li class="am-animation-slide-top am-animation-delay-1" data-am-scrollspy="{animation:'slide-top', delay: 100}"> <a href="strategy.jsp"><img src="images/areabg3.png" width="180" height="90" /></a> </li>
-              <li class="am-animation-slide-top am-animation-delay-1" data-am-scrollspy="{animation:'slide-top', delay: 100}"> <a href="stockcompare.jsp"><img src="images/areabg4.png" width="180" height="90" /></a> </li>  
+              <!--<li class="am-animation-slide-top am-animation-delay-1" data-am-scrollspy="{animation:'slide-top', delay: 100}"> <a href="strategy.jsp"><img src="images/areabg3.png" width="180" height="90" /></a> </li>-->
+               <li class="am-animation-slide-top am-animation-delay-1" data-am-scrollspy="{animation:'slide-top', delay: 100}"> <a href="stockcompare.jsp"><img src="images/areabg4.png" width="180" height="90" /></a> </li>  
             </ul>
             <ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-6 am-thumbnails">
               <li class="am-animation-slide-top am-animation-delay-1" data-am-scrollspy="{animation:'slide-top', delay: 100}"> <a href="longhu.jsp"  id="longhubang"><img src="images/areabg5.png" width="180" height="90" /></a> </li>
